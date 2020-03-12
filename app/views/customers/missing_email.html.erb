@@ -1,0 +1,8 @@
+<h2 class="mt-3">Missing Email Customers</h2>
+
+<div class="row">
+  <%= render partial: 'customers/customer',
+             collection: @customers,
+             locals: { show_link: true } # Creates a show_link var in the partial
+  %>
+</div>

@@ -1,0 +1,10 @@
+<h2 class="mt-3">All Customers</h2>
+<%= link_to "Alphabetized view", customers_alphabetized_path, class:"mr-3" %>
+<%= link_to "Missing email view", customers_missing_email_path %>
+
+<div class="row">
+  <%= render partial: 'customers/customer',
+             collection: @customers,
+             locals: { show_link: true } # Creates a show_link var in the partial
+  %>
+</div>
