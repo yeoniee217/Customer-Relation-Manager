@@ -16,7 +16,6 @@ ActiveRecord::Schema.define(version: 2020_03_11_170440) do
     t.string "full_name"
     t.string "phone_number"
     t.string "email"
-    t.string "image"
     t.text "notes"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
